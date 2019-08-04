@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `BCav's Coffee Company`,
     description: `Small batch cold brew coffee company located in tha Dallas/Fort Worth area.`,
-    author: `@niklasmtj`,
+    author: `@bcavscoffeeco`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
