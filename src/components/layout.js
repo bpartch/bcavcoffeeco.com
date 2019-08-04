@@ -19,7 +19,6 @@ const Content = styled.div`
   padding: 0 1.0875rem 1rem;
   padding-top: 0;
 `
-
 const Footer = styled.footer`
   display: flex;
   justify-content: center;
