@@ -6,12 +6,12 @@ import React from "react"
 const Content = styled.div`
   max-width: 860px;
   padding: 1rem 1.0875rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 `
 
 const NavLink = styled(Link)`
   color: black;
-  margin-left: 15px;
+  margin-left: 35px;
   text-decoration: none;
   display: inline-block;
   position: relative;

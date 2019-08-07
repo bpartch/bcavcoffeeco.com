@@ -22,6 +22,7 @@ const Content = styled.div`
 const Footer = styled.footer`
   display: flex;
   justify-content: center;
+  font-size: .9rem;
 `
 
 const Layout = ({ children }) => (
