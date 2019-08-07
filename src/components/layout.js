@@ -41,7 +41,9 @@ const Layout = ({ children }) => (
         <Content>
           <main>{children}</main>
           <Footer>
-            © {new Date().getFullYear()}, {data.site.siteMetadata.title} All Rights Reserved.
+            <p>© {new Date().getFullYear()}, {data.site.siteMetadata.title} All Rights Reserved.</p>
+            <p>&nbsp;Built with <span role="img" aria-label="red heart">❤️</span>
+            &nbsp;and <span role="img" aria-label="cup of cpffee">☕</span></p>
           </Footer>
         </Content>
       </>
