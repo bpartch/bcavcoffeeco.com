@@ -10,30 +10,33 @@ const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
   padding: 1.45rem 1.0875rem;
+  margin-bottom: 2rem;
+`
+
+const Post = styled.div`
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
 `
 
 const ArticleDate = styled.h5`
   display: inline;
-  color: #606060;
+  color: #333;
   margin-bottom: 10px;
 `
 
 const MarkerHeader = styled.h3`
   display: inline;
-  border-radius: 1em 0 1em 0;
   margin-bottom: 10px;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
-  );
 `
 
 const ReadingTime = styled.h5`
   display: inline;
   color: #606060;
   margin-bottom: 10px;
+  padding: 2px 10px;
+  border-radius: 5px;
+  border: 0 solid #999;
+  background-color: lightgray;
 `
 
 const IndexPage = ({ data }) => {
@@ -42,7 +45,9 @@ const IndexPage = ({ data }) => {
       <SEO title="Blog" />
       <Content>
         <h1>Blog</h1>
+        <p>Please choose an article that interests you to read below.</p>
         {data.allMarkdownRemark.edges.map(({ node }) => (
+        <Post>
           <div key={node.id}>
             <Link
               to={node.frontmatter.path}
@@ -52,13 +57,14 @@ const IndexPage = ({ data }) => {
               `}
             >
               <MarkerHeader>{node.frontmatter.title} </MarkerHeader>
-              <div>
-                <ArticleDate>{node.frontmatter.date}</ArticleDate>
-                <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
+            </Link>
+              <div css={css`margin-bottom: .3em;`}>
+                <ArticleDate>{node.frontmatter.date} - </ArticleDate>
+                <ReadingTime>{node.fields.readingTime.text}</ReadingTime>
               </div>
               <p>{node.excerpt}</p>
-            </Link>
           </div>
+        </Post>
         ))}
       </Content>
     </Layout>

@@ -1,7 +1,5 @@
 /**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
+ * Layout component that queries for data with Gatsby's StaticQuery component
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
@@ -43,7 +41,7 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <Footer>
             <p>© {new Date().getFullYear()}, {data.site.siteMetadata.title} All Rights Reserved.</p>
-            <p>&nbsp;Built with <span role="img" aria-label="red heart">❤️</span>
+            <p>&nbsp;Built with <span role="img" aria-label="sparkling heart">💖</span>
             &nbsp;and <span role="img" aria-label="cup of cpffee">☕</span></p>
           </Footer>
         </Content>

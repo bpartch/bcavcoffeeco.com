@@ -1,11 +1,12 @@
 ---
-title: "Code Example"
+title: "Your Most Recent Post"
 date: "2019-06-06"
 draft: false
-path: "/blog/code-example"
+path: "/blog/articles/code-example"
 ---
 
-## An Code example with PrismJS
+## A Code example with PrismJS
+
 Gatsby-Starter-Julia uses the Atom Editor Theme.
 
 ```js

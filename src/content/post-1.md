@@ -2,8 +2,11 @@
 title: "Example Title"
 date: "2019-03-17"
 draft: false
-path: "/blog/example-title"
+path: "/blog/articles/example-title"
 ---
+
+Fish ain't gonna swim, unless you give it water and it wants to swim to the other side of the fish tank... and it doesn't drown on it's way!!!
+
 # H1
 
 ## H2
