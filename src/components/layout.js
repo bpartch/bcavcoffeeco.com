@@ -42,7 +42,7 @@ const Layout = ({ children }) => (
           <Footer>
             <p>© {new Date().getFullYear()}, {data.site.siteMetadata.title} All Rights Reserved.</p>
             <p>&nbsp;Built with <span role="img" aria-label="sparkling heart">💖</span>
-            &nbsp;and <span role="img" aria-label="cup of cpffee">☕</span></p>
+            &nbsp;and <span role="img" aria-label="cup of coffee">☕</span></p>
           </Footer>
         </Content>
       </>
